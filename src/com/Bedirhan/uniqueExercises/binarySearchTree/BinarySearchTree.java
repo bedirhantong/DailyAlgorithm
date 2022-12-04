@@ -60,5 +60,42 @@ public class BinarySearchTree {
 
 
 
+    public int minValue(Node root) {
+        int min = root.data;
+        while(root.left != null) {
+            min = root.left.data;
+            root = root.left;
+        }
+        return min;
+    }
+
+
+    public void delete(int data) {
+        root = delete(root, data);
+    }
+    public Node delete(Node root, int data) {
+        if(root == null) {
+            return root;
+        }
+        if(data < root.data) {
+            root.left = delete(root.left, data);
+        }
+        else if(data > root.data) {
+            root.right = delete(root.right, data);
+        }
+        else {
+            if(root.left == null) {
+                return root.right;
+            }
+            else if(root.right == null) {
+                return root.left;
+            }
+            root.data = minValue(root.right);
+            root.right = delete(root.right, root.data);
+        }
+        return root;
+    }
+
+
 
 }

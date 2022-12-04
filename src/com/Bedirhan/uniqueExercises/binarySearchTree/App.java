@@ -17,5 +17,11 @@ public class App{
         bst.postorder();
         System.out.println();
 
+        bst.delete(30);
+        bst.inorder();
+        System.out.println();
+        bst.delete(50);
+        bst.inorder();
+        System.out.println();
     }
 }
