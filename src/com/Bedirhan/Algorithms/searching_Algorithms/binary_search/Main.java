@@ -1,4 +1,4 @@
-package com.Bedirhan.searching_Algorithms.binary_search;
+package com.Bedirhan.Algorithms.searching_Algorithms.binary_search;
 
 public class Main {
     public static void main(String[] args) {

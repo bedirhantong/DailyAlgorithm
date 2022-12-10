@@ -1,4 +1,4 @@
-package com.Bedirhan.searching_Algorithms.linear_search;
+package com.Bedirhan.Algorithms.searching_Algorithms.linear_search;
 
 import java.util.List;
 
