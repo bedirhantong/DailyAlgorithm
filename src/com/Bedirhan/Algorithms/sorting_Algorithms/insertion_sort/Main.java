@@ -1,4 +1,4 @@
-package com.Bedirhan.Algorithms.sorting_Algorithms;
+package com.Bedirhan.Algorithms.sorting_Algorithms.insertion_sort;
 
 import java.util.Random;
 
